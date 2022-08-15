@@ -10,11 +10,15 @@ function guess_filenum {
                echo "Amazing!!!! You finally guessed it!"
                echo "Hoorayyy"
                echo "So we have ..."
+
                for f in $(ls)
                do
-                echo " -s $f and "
+
+               echo " -s $f and "
                done
+
                echo " ... and that was it"
+
          else
                 if [[ $guess -gt $filenum ]]
                 then
@@ -26,6 +30,7 @@ function guess_filenum {
                  fi
           fi
                        }
+
 echo " Welcome to the guessing game! "
 echo "Guess how many files are in the current directory and press Enter : "
 guess_filenum
